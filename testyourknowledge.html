@@ -1,0 +1,532 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab|Roboto:300,400,500,700" />
+
+    <title>Computational Mind Exercise</title>
+  </head>
+  <body>
+      <nav>
+            <div class="container nav_container">
+            <a href="index.html"><h4>Computational Mind</h4></a>
+             <ul class ="nav_menu">
+                <li style="--clr:#00ade1">
+                    <a href="index.html" data-text="&nbsp;Home">&nbsp;Home&nbsp;</a>
+                </li>
+                <li style="--clr:#f23208">
+                  <a href="learn.html" data-text="&nbsp;Learn">&nbsp;Learn&nbsp;</a>
+                </li>
+                <li style="--clr:#00dc82">
+                  <a href="feedback.html" data-text="&nbsp;Contact">&nbsp;Contact&nbsp;</a>
+                </li>
+                <li style ="--clr:#f36407">
+                  <a href ="login.html" data-text="&nbsp;Login">&nbsp;Login&nbsp;</a>
+                </li>
+            </ul>
+          </div>
+        </nav>
+  </body>
+
+  <header>
+    <h2>Computational Thinking Wrap up</h2>
+    </header>
+    <hr style="height:5px;border-width:0;color:black;background-color:black">
+    &nbsp;
+
+    <section class="testyourknowledge">
+  
+      <div class="quiz-container">
+        <h4>Computational Thinking Quiz</h4>
+        <div id="question-container">
+          <h2 id="question">Question</h2>
+          <div id="answer-buttons"></div>
+          </div>
+          <button id="next-btn" class="btn hide">Next Question</button>
+          <div id="result" class="hide"></div>
+          <button id="restart-btn" class="btn hide">Restart</button>
+        </div>
+  
+        <h2>We hope you enjoyed your time here, continue to develop and be as great as you can be!</h2>
+    </section>
+
+
+
+  <section class="forward">
+    <div class="nextpage">
+      <h1>Thanks for visiting!</h1>
+
+      <button id ="page-btn" onclick="window.location.href='section4.html';">Back to Section 4</button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button id ="page-btn" onclick="window.location.href='index.html';">Go Home</button>
+    </div>
+    </section>
+
+        <style>  
+        
+          body {
+            line-height: 1.5;
+            color: #fff;
+            background: #330099;
+            }
+
+          .container {
+              width: 75%;
+              margin: 0 auto;
+            }
+
+          header {
+          position: relative;
+          top: 10rem;
+          height: 30vh;
+          font-size: 2.5rem;
+          justify-content: center;
+          text-align: center;
+          -webkit-text-stroke: 2px;
+          -webkit-text-stroke-color: black;
+        }
+        
+          h4 {
+           font-size: 1.5rem;
+           -webkit-text-stroke: 1px;
+           -webkit-text-stroke-color: black;
+        }
+
+          .testyourknowledge {
+          background: #000;
+          text-align: center;
+          padding: 1rem;
+          height: 75vh;
+          margin-bottom: 1rem;
+        }
+
+          .quiz-container {
+          display: flex;
+          flex-direction: column;
+          background: #330099;
+          width: 90%;
+          max-width: 800px;
+          margin: 1rem auto 0;
+          border: 2px solid #515152;
+          border-radius: 4px;
+          padding: 30px;
+          margin-bottom: 3rem;
+        }
+
+          .quiz-container h2 {
+          font-weight: 25px;
+          border-bottom: 1px solid #515152;
+          padding-bottom: 30px;
+        }
+        
+          #question-container {
+          flex-direction: column;
+          gap: 2rem;
+           padding: 2rem;
+          }
+
+          #question {
+            text-align: center;
+            margin-bottom: 0;
+            margin-top: 1rem;
+          }
+
+          #answer-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.25rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+          }
+
+          .input-group {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+          }
+
+          input {
+            width: fit-content;
+          }
+
+          .btn {
+            padding: 1.5rem;
+            background-color: #fff;
+            color: #515152;
+            border: none;
+            border-radius: 4px;
+          }
+
+          input,
+          .btn {
+            cursor: pointer;
+          }
+
+          .btn:hover {
+            background-color: #515152;
+            color: #fff;
+          }
+
+          .hide {
+            display: none;
+          }
+
+          #result {
+            margin: 2rem auto;
+          }
+
+          #question,
+          #result {
+            font-size: 1.5rem;
+            font-weight: bold;
+          }
+
+          .forward {
+            background: #000;
+            text-align: center;
+            padding: 1rem;
+            height: 25vh;
+          }
+
+          .forward h1 {
+            font-size: 2rem;
+            line-height: 1;
+            margin-bottom: 3rem;
+          }
+
+          * {
+            padding: 0;
+            margin: 0;
+            border: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-family: 'Mochiy Pop One', sans-serif;
+            }
+        
+          a {
+            color: #fff;
+          }
+
+          nav {
+            background: transparent;
+            width: 100vw;
+            height: 5rem;
+            position: fixed;
+            top: 0;
+            z-index: 10;
+          }
+
+          .window-scroll {
+            background: #000;
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+          }
+
+          .nav_container {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+          .nav_menu {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+          }
+
+          .nav_menu a {
+            font-size: 1rem;
+          }
+
+          .nav_menu a:hover {
+            color: #9683EC;
+          }
+
+          ul{
+            position: relative;
+            list-style: none;
+            width: 60%;
+            justify-content: space-evenly;
+            gap: 30px;
+          }
+
+          ul li{ 
+            position: relative;
+            list-style: none;
+          }
+
+          ul li a{
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: transparent;
+            line-height: 1.5em;
+            text-decoration: none;
+            -webkit-text-stroke: 1px rgba(255,255,255,0.5);
+          }
+
+          ul li a::before {
+            position: absolute;
+            content: attr(data-text);
+            color: var(--clr);
+            width: 0;
+            overflow: hidden;
+            transition: 1s;
+            border-right: 4px solid var(--clr);
+           -webkit-text-stroke: 1px var(--clr);
+          }
+
+          ul li a:hover::before {
+            width: 100%;
+            filter: drop-shadow(0 0 25px var(--clr));
+          }
+
+          #page-btn {
+            font-size: 30px;
+            padding: 6px 10px;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            outline: none;
+            cursor: pointer;
+          }
+
+          #page-btn:hover {
+            background-color: transparent;
+            border-color: #fff;
+            color: #fff;
+            font-weight: 500;
+          }
+          
+          </style>
+
+          <script>
+
+        window.addEventListener('scroll', () => {
+         document.querySelector('nav').classList.toggle
+        ('window-scroll', window.scrollY > 50)})
+
+        const questionContainer = document.getElementById("question-container");
+        const questionElement = document.getElementById("question");
+        const answerButtons = document.getElementById("answer-buttons");
+        const nextButton = document.getElementById("next-btn");
+        const restartButton = document.getElementById("restart-btn");
+        const resultDiv = document.getElementById("result");
+
+        let shuffledQuestions, currentQuestionIndex, score;
+
+        const questions = [
+          {
+            question: "What is the second step in computational thinking?",
+            answers: [
+              { text: "Algorithmic Thinking", correct: false },
+              { text: "Decomposition", correct: false },
+              { text: "Pattern Recognition", correct: true },
+              { text: "Abstraction", correct: false },
+            ],
+          },
+          {
+            question: "What algorithm is most like the concept of computational thinking?",
+            answers: [
+              { text: "Topological Sort", correct: false },
+              { text: "Divide and Conquer", correct: true },
+              { text: "Counting Sort", correct: false },
+              { text: "Kruskal", correct: false },
+            ],
+          },
+          {
+            question: "What is the goal of computational thinking?",
+            answers: [
+              { text: "To complete your work", correct: false },
+              { text: "Figure out what someone is asking of you", correct: false },
+              { text: "Formulate an algorithm to solve problems logically", correct: true },
+              { text: "Think about something like a computer", correct: false },
+            ],
+          },
+          {
+            question: "What is an example of Abstraction",
+            answers: [
+              { text: "Breaking a problem down and splitting the work up with others", correct: false },
+              { text: "Getting rid of a piece of the problem", correct: false },
+              { text: "Coming up with a solution after understanding what the problem is asking for", correct: true },
+              { text: "Creating instructions for the problem", correct: false },
+            ],
+          },
+          {
+            question: "What can you do after you create an algorithm for a problem?",
+            answers: [
+              { text: "Avoid any problems afterwards", correct: false },
+              { text: "Don't use the algorithm", correct: false },
+              { text: "Forget about it and move on", correct: false },
+              { text: "Use that algorithm & process as guidelines for future problems", correct: true },
+            ],
+          },
+          {
+            question: "In Computational Thinking, how is your algorithm supposed to be look?",
+            answers: [
+              { text: "Simple enough for a computer to understand", correct: true},
+              { text: "In order from most important to least important", correct: false },
+              { text: "It just needs to be a complete solution", correct: false },
+              { text: "Sorted in alphabetical order", correct: false },
+            ],
+          },
+          {
+            question: "What is Decomposition?",
+            answers: [
+              { text: "Making an algorithm for the problem", correct: false },
+              { text: "Reading and understanding the problem", correct: false },
+              { text: "Breaking down a problem into smaller, more manageable problems", correct: true },
+              { text: "Finding the similarities in subproblems", correct: false },
+            ],
+          },
+          {
+            question: "Which of these is an example of Pattern Recognition?",
+            answers: [
+              { text: "Breaking into groups to complete the subtasks", correct: false },
+              { text: "Laying out all of the problems that need to be resolved", correct: false },
+              { text: "Collaborating with a group member, because your tasks are alike", correct: true },
+              { text: "Analyzing the problems presented", correct: false },
+            ],
+          },
+          {
+            question: "How many steps are there in computational thinking?",
+            answers: [
+              { text: "Seven", correct: false },
+              { text: "Four", correct: true },
+              { text: "Three", correct: false},
+              { text: "Five", correct: false },
+            ],
+          },
+          {
+            question: "Where did computational thinking stem from?",
+            answers: [
+              { text: "Quantum Science", correct: false },
+              { text: "Engineering", correct: false },
+              { text: "Physical Sciences", correct: true },
+              { text: "Computer Science", correct: true },
+            ],
+          },
+          {
+            question: "What are some of the skills that computational thinking helps?",
+            answers: [
+              { text: "Problem Solving, Critical Thinking, Pattern Recognition", correct: true },
+              { text: "Critical Thinking, Context Clues, Collaboration", correct: false },
+              { text: "Problem Solving, Speed Reading, Goal Setting", correct: false },
+              { text: "Imagery, Critical Thinking, Problem Solving", correct: false },
+            ],
+          },
+          {
+            question: "What age group does this technique work for the most?",
+            answers: [
+              { text: "5-12 years old", correct: false },
+              { text: "13-19 years old", correct: false },
+              { text: "20+ years old", correct: false },
+              { text: "All of the Above", correct: true },
+            ],
+          },
+          {
+            question: "Where can Computational Thinking be applied?",
+            answers: [
+              { text: "Everywhere", correct: true },
+              { text: "In the fields of Science", correct: false },
+              { text: "In Engineering", correct: false },
+              { text: "Only Computer Science", correct: false },
+            ],
+          },
+          {
+            question: "What can be used to hlep you retain information that you read?",
+            answers: [
+              { text: "Human-Computer interaction and Information Visualization", correct: true },
+              { text: "Re-reading the information and writing it down", correct: false },
+              { text: "Looking at videos on it", correct: false },
+              { text: "Getting someone to help you with it", correct: false },
+            ],
+          },
+          {
+            question: "Which of these is a summary of computational thinking?",
+            answers: [
+              { text: "Finding a way to complete a goal", correct: false },
+              { text: "Continous simplification of a problem and solving it in easy steps", correct: true },
+              { text: "Breaking down a problem seeing what the problem wants from you", correct: false },
+              { text: "Making a complex algorithm to a problem that needs to be solved", correct: false },
+            ],
+          },
+        ];
+
+        startQuiz();
+
+        function startQuiz() {
+          score = 0;
+          questionContainer.style.display = "flex";
+          shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+          currentQuestionIndex = 0;
+          nextButton.classList.remove("hide");
+          restartButton.classList.add("hide");
+          resultDiv.classList.add("hide");
+          setNextQuestion();
+        }
+
+        function setNextQuestion() {
+          resetState();
+          showQuestion(shuffledQuestions[currentQuestionIndex]);
+        }
+
+        function showQuestion(question) {
+          questionElement.innerText = question.question;
+          question.answers.forEach((answer, index) => {
+            const inputGroup = document.createElement("div");
+            inputGroup.classList.add("input-group");
+
+            const radio = document.createElement("input");
+            radio.type = "radio";
+            radio.id = "answer" + index;
+            radio.name = "answer";
+            radio.value = index;
+
+            const label = document.createElement("label");
+            label.htmlFor = "answer" + index;
+            label.innerText = answer.text;
+
+            inputGroup.appendChild(radio);
+            inputGroup.appendChild(label);
+            answerButtons.appendChild(inputGroup);
+          });
+        }
+
+        function resetState() {
+          while (answerButtons.firstChild) {
+            answerButtons.removeChild(answerButtons.firstChild);
+          }
+        }
+
+        nextButton.addEventListener("click", () => {
+          const answerIndex = Array.from(
+            answerButtons.querySelectorAll("input")
+          ).findIndex((radio) => radio.checked);
+          if (answerIndex !== -1) {
+            if (shuffledQuestions[currentQuestionIndex].answers[answerIndex].correct) {
+              score++;
+            }
+            currentQuestionIndex++;
+            if (shuffledQuestions.length > currentQuestionIndex) {
+              setNextQuestion();
+            } else {
+              endQuiz();
+            }
+          } else {
+            alert("Please select an answer.");
+          }
+        });
+
+        restartButton.addEventListener("click", startQuiz);
+
+        function endQuiz() {
+          questionContainer.style.display = "none";
+          nextButton.classList.add("hide");
+          restartButton.classList.remove("hide");
+          resultDiv.classList.remove("hide");
+          resultDiv.innerText = `Your final score: ${score} / ${shuffledQuestions.length}`;
+        }
+
+          </script>
+</html>

@@ -1,0 +1,633 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab|Roboto:300,400,500,700" />
+
+    <title>Computational Mind Section 3</title>
+  </head>
+  <body>
+      <nav>
+            <div class="container nav_container">
+            <a href="index.html"><h4>Computational Mind</h4></a>
+             <ul class ="nav_menu">
+                <li style="--clr:#00ade1">
+                    <a href="index.html" data-text="&nbsp;Home">&nbsp;Home&nbsp;</a>
+                </li>
+                <li style="--clr:#f23208">
+                  <a href="learn.html" data-text="&nbsp;Learn">&nbsp;Learn&nbsp;</a>
+                </li>
+                <li style="--clr:#00dc82">
+                  <a href="feedback.html" data-text="&nbsp;Contact">&nbsp;Contact&nbsp;</a>
+                </li>
+                <li style ="--clr:#f36407">
+                  <a href ="login.html" data-text="&nbsp;Login">&nbsp;Login&nbsp;</a>
+                </li>
+            </ul>
+          </div>
+        </nav>
+  </body>
+
+  <header>
+  <h2>Computational Thinking in Action</h2>
+  </header>
+  <hr style="height:5px;border-width:0;color:black;background-color:black">
+  &nbsp;
+
+    <section class="act">
+      <h2>Let's do a little bit of practice to help you understand more.</h2>
+      <p>First, let's make sure you know what to do. Arrange the blocks in the correct order that 
+        the computational thinking steps fall in.
+      <br>
+      <br>
+      <a class="helpbtn" href="#" onclick="toggle();">Help</a>
+      </p>
+      <div class="helpvid">
+        <video src="./images/helpvid1.mov" controls="true"></video>
+        <img src ="./images/close.png" class="close" onclick="toggle();">
+      </div>
+    <section class="draggable-elements">
+      <i class="item1 draggable" draggable="true" style="color: green;" id="item1">Algorithmic Thinking</i>
+      <i class="item2 draggable" draggable="true" style="color: green;" id="item2">Decomposition</i>
+      <i class="item3 draggable" draggable="true" style="color: green;" id="item3">Pattern Recognition</i>
+      <i class="item4 draggable" draggable="true" style="color: green;" id="item4">Abstraction</i>
+    </section>
+
+    <section class="droppable-elements">
+      <div class="droppable" data-draggable-id="item2"><span>Step 1</span></div>
+      <div class="droppable" data-draggable-id="item4"><span>Step 2</span></div>
+      <div class="droppable" data-draggable-id="item3"><span>Step 3</span></div>
+      <div class="droppable" data-draggable-id="item1"><span>Step 4</span></div>
+    </section>
+  </section>
+
+
+  <section class="act">
+    <h2>Great! You know the order, now do you remember what each step asks of you?</h2>
+    <p>Match the name of the step with the correct description of the step.</p>
+    <section class="draggable-elements">
+      <i class="item1 draggable" draggable="true" style="color: green;" id="item5">Abstraction</i>
+      <i class="item2 draggable" draggable="true" style="color: green;" id="item6">Algorithmic Thinking</i>
+      <i class="item3 draggable" draggable="true" style="color: green;" id="item7">Decomposition</i>
+      <i class="item4 draggable" draggable="true" style="color: green;" id="item8">Pattern Recognition</i>
+    </section>
+
+    <section class="droppable-elements">
+      <div class="droppable" data-draggable-id="item8"><span>Look for any similarities in the smaller problems.</span></div>
+      <div class="droppable" data-draggable-id="item7"><span>Breakdown the problems into smaller problems.</span></div>
+      <div class="droppable" data-draggable-id="item5"><span>Find the most important parts of the smaller problems.</span></div>
+      <div class="droppable" data-draggable-id="item6"><span>Create a step-by-step solution to the overall problem.</span></div>
+    </section>
+  </section>
+
+  <section class="act">
+    <h2>Now let's try a real-world example to help you understand the concept.</h2>
+    <p>Let's say you are planning a party for your friend. Can you match the following steps with the computational thinking steps?</p>
+    <section class="draggable-elements">
+      <i class="item1 draggable" draggable="true" style="color: green;" id="dec">Figure out everything that needs to be done.</i>
+      <i class="item2 draggable" draggable="true" style="color: green;" id="at">Create the plan to get everything together for the party.</i>
+      <i class="item3 draggable" draggable="true" style="color: green;" id="pr">Find out what needed items are similar to each other.</i>
+      <i class="item4 draggable" draggable="true" style="color: green;" id="abs">Think about what's the most important things for the party.</i>
+      <i class="item5 draggable" draggable="true" style="color: green;" id="fut">Keep the plan in mind for similar future events.</i>
+   </section>
+
+    <section class="droppable-elements">
+      <div class="droppable" data-draggable-id="pr"><span>Pattern Recognition</span></div>
+      <div class="droppable" data-draggable-id="at"><span>Algorithmic Thinking</span></div>
+      <div class="droppable" data-draggable-id="dec"><span>Decomposition</span></div>
+      <div class="droppable" data-draggable-id="abs"><span>Abstraction</span></div>
+      <div class="droppable" data-draggable-id="fut"><span>Save the solution for future reference</span></div>
+    </section>
+  </section>
+
+  <section class="act">
+    <h2>Let's try another real-world example.</h2>
+    <p>Let's say you are creating a new homemade meal. Can you put the following tasks in the correct order?</p>
+    <section class="draggable-elements">
+      <i class="item1 draggable" draggable="true" style="color: green;" id="at1">Create a recipe for the meal.</i>
+      <i class="item2 draggable" draggable="true" style="color: green;" id="abs1">Understand what is truly needed to create the dish.</i>
+      <i class="item3 draggable" draggable="true" style="color: green;" id="dec1">Think of all of the ingredients and tools needed for the meal.</i>
+      <i class="item4 draggable" draggable="true" style="color: green;" id="pr1">Understand what tools and ingredients are alike or correlated to each other.</i>
+      <i class="item5 draggable" draggable="true" style="color: green;" id="fut1">Save the recipe and use it as a reference. </i>
+   </section>
+
+    <section class="droppable-elements">
+      <div class="droppable" data-draggable-id="dec1"><span>Step 1: Decomposition</span></div>
+      <div class="droppable" data-draggable-id="pr1"><span>Step 2: Pattern Recognition</span></div>
+      <div class="droppable" data-draggable-id="abs1"><span>Step 3: Abstraction</span></div>
+      <div class="droppable" data-draggable-id="at1"><span>Step 4: Algorithmic Thinking</span></div>
+      <div class="droppable" data-draggable-id="fut1"><span>Step 5: Save the solution for future reference</span></div>
+    </section>
+  </section>
+
+  <section class="yourself">
+    <h2>Let's see if you can come up with your own algorithm.</h2>
+      <h3>Let's say you're currently working on something with your peers. In order for you all to progress with that task you need to learn a new concept and be able to
+        apply to what you've already been working on. How would you go about doing that?
+      </h3>
+      <div class="box">
+        <h2>Create your own Algorithm</h2>
+        <div class="input">
+        <input type="text" placeholder="Enter your Steps" id="inp">
+        <button id="abox" onclick="Add()">Add</button>
+      </div>
+      <div class="text">
+
+      </div>
+      </div>
+    
+
+  </section>
+
+  <section class="breakdown">
+    <h4>The possible times that computational thinking can be applied are endless! There are an enormous amount of problems that people have or may have in life. You can use 
+      this concept to help you get through all of them. They can help you become mentally stronger and get you through all tasks. It doesn't matter the difficulty. As long 
+      as you continue to strengthen your mind and work on these skills. You'll be able to apply these skills to your everyday life. They will become second nature to you, and 
+      you'll just be recognizing everything going on in a problem and executing a simple solution in no time!
+    </h4>
+    <img src="./images/breakdown.png">
+  </section>
+
+
+
+
+    <section class="forward">
+    <div class="nextpage">
+      <h1>Lets Keep Going!</h1>
+
+      <button onclick="window.location.href='section2.html';">Back to Section 2</button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button onclick="window.location.href='section4.html';">Go to Section 4</button>
+    </div>
+    </section>
+        <style>  
+        
+        body {
+            line-height: 1.5;
+            color: #fff;
+            background: #330099;
+            }
+        
+        .act {
+             background:#000;
+             margin-bottom: 5rem;
+             padding: 2rem;
+            }
+
+        .act h2 {
+          position: relative;
+          top: 5rem;
+          height: 30vh;
+          font-size: 4rem;
+          justify-content: center;
+          text-align: center;
+        }
+
+        .act p {
+          position: relative;
+          justify-content: center;
+          text-align: center;
+          font-size: 2rem;
+        }
+
+        .container {
+              width: 75%;
+              margin: 0 auto;
+
+        }
+
+        header {
+          position: relative;
+          top: 10rem;
+          height: 30vh;
+          font-size: 2.5rem;
+          justify-content: center;
+          text-align: center;
+          -webkit-text-stroke: 2px;
+          -webkit-text-stroke-color: black;
+        }
+        
+        h4 {
+           font-size: 1.5rem;
+           -webkit-text-stroke: 1px;
+           -webkit-text-stroke-color: black;
+         }
+
+        .draggable-elements {
+          min-height: 400px;
+          margin: 20px;
+          border: 2px solid #330099;
+          box-shadow: 0 1rem 1rem rgba(51, 0, 153, 1);
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          }
+
+        .draggable {
+            display: flex;
+            align-items: center;
+            width: 500px;
+            justify-content: center;
+            font-size: 1rem;
+            cursor: move;
+            background: #515152;
+            border: 2px solid #330099;
+            box-shadow: 0 0.2rem 0.2rem rgba(51, 0, 153, 1);
+            height: 60px;
+            margin: 30px;
+            padding: 2rem;
+            transition: opacity 0.2s;
+          }
+
+        .draggable:hover {
+            opacity: 0.5;
+          }
+
+        .droppable-elements {
+          min-height: 400px;
+          margin: 20px;
+          border: 2px solid #330099;
+          box-shadow: 0 1rem 1rem rgba(51, 0, 153, 1);
+          color: #000;
+        }
+
+        .droppable {
+            height: 6.5rem;
+            width: 25rem;
+            margin: 1rem auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            font-size: 4rem;
+            font-weight: bold;
+            background-color: #fff;
+            border: 3px dashed #111;
+            transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
+          }
+
+       .droppable span {
+            font-size: 1.25rem;
+            pointer-events: none;
+          }
+
+
+        .droppable.droppable-hover {
+            border-width: 5px;
+            transform: scale(1.1);
+          }
+
+        .droppable.dropped {
+            border-style: solid;
+            color: #fff;
+          }
+
+        .droppable.dropped span {
+            font-size: 0.75rem;
+            margin-top: 0.5rem;
+          }
+
+        .droppable.dropped i {
+            pointer-events: none;
+          }
+
+        .draggable.dragged {
+            user-select: none;
+            opacity: 0.1;
+            cursor: default;
+          }
+
+        .draggable.dragged:hover {
+            opacity: 0.1;
+          }
+
+        .breakdown {
+            background: #000;
+            text-align: center;
+            padding: 1rem;
+            height: 60vh;
+            margin-bottom: 1rem;
+          }
+
+        .forward {
+            background: #000;
+            text-align: center;
+            padding: 1rem;
+            height: 25vh;
+          }
+
+        .forward h1 {
+            font-size: 2rem;
+            line-height: 1;
+            margin-bottom: 3rem;
+          }
+
+          .yourself {
+            background: #000;
+            text-align: center;
+            padding: 1rem;
+            height: 80vh;
+            margin-bottom: 1rem;
+            align-items: center;
+          }
+
+          .box {
+            width: 700px;
+            padding: 33px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            background-color: #330099;
+            margin-left: 33%;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 2px solid #515152;
+          }
+
+          input {
+            width: 270px;
+            padding: 8px;
+            border: 2px solid #515152;
+            outline: none;
+            font-size: 19px;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+          }
+         
+          .text ul{
+          position: relative;
+          background-color: #000;
+          margin-bottom: 1rem;
+          width: 650px;
+          border-radius: 5px;
+          color: white;
+          font-size: 19px;
+          padding: 7px;
+          text-align: left;
+          }
+
+          .text ul i{
+          position: absolute;
+          right: 10px;
+          cursor: pointer;
+          }
+
+        * {
+            padding: 0;
+            margin: 0;
+            border: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-family: 'Mochiy Pop One', sans-serif;
+            }
+        
+        a {
+            color: #fff;
+          }
+
+        nav {
+            background: transparent;
+            width: 100vw;
+            height: 5rem;
+            position: fixed;
+            top: 0;
+            z-index: 10;
+          }
+
+          .window-scroll {
+            background: #330099;
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+          }
+
+          .nav_container {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+          .nav_menu {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+          }
+
+          .nav_menu a {
+            font-size: 1rem;
+          }
+
+          .nav_menu a:hover {
+            color: #9683EC;
+          }
+
+          ul{
+            position: relative;
+            list-style: none;
+            width: 60%;
+            justify-content: space-evenly;
+            gap: 30px;
+          }
+
+          ul li{ 
+            position: relative;
+            list-style: none;
+          }
+
+          ul li a{
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: transparent;
+            line-height: 1.5em;
+            text-decoration: none;
+            -webkit-text-stroke: 1px rgba(255,255,255,0.5);
+          }
+
+          ul li a::before {
+            position: absolute;
+            content: attr(data-text);
+            color: var(--clr);
+            width: 0;
+            overflow: hidden;
+            transition: 1s;
+            border-right: 4px solid var(--clr);
+           -webkit-text-stroke: 1px var(--clr);
+          }
+
+          ul li a:hover::before {
+            width: 100%;
+            filter: drop-shadow(0 0 25px var(--clr));
+          }
+
+          button {
+            font-size: 30px;
+            padding: 6px 10px;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            outline: none;
+            cursor: pointer;
+            margin-bottom: 1rem;
+          }
+
+          button:hover {
+            background-color: transparent;
+            border-color: #fff;
+            color: #fff;
+            font-weight: 500;
+          }
+          
+          .helpbtn {
+            font-size: 30px;
+            padding: 6px 10px;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            outline: none;
+            cursor: pointer;
+            background:#fff;
+            color: #000;
+          }
+
+          .helpbtn:hover {
+            background-color: transparent;
+            border-color: #fff;
+            color: #fff;
+            font-weight: 500;
+          }
+
+          .helpvid {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10000;
+            background: rgba(0, 0, 0, 0.95);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+            opacity: 0;
+          }
+
+          .helpvid.active {
+            visibility: visible;
+            opacity: 1;
+          }
+          
+          .helpvid video {
+            position: relative;
+            max-width: 900px;
+            outline: none;
+          }
+
+          .close {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            cursor: pointer;
+            max-width: 32px;
+          }
+
+          @media (max-width: 991px) {
+            .helpvid video {
+              max-width: 90%;
+            }
+          }
+          
+          </style>
+
+          <script>
+
+          window.addEventListener('scroll', () => {
+         document.querySelector('nav').classList.toggle
+        ('window-scroll', window.scrollY > 50)})
+
+        const draggableElements = document.querySelectorAll(".draggable");
+        const droppableElements = document.querySelectorAll(".droppable");
+
+        draggableElements.forEach(elem => {
+          elem.addEventListener("dragstart", dragStart)
+         });
+
+        droppableElements.forEach(elem => {
+          elem.addEventListener("dragenter", dragEnter); 
+          elem.addEventListener("dragover", dragOver); 
+          elem.addEventListener("dragleave", dragLeave); 
+          elem.addEventListener("drop", drop); 
+        });
+
+        function dragStart(event) {
+          event.dataTransfer.setData("text", event.target.id); 
+        }
+
+     
+
+        function dragEnter(event) {
+          if(!event.target.classList.contains("dropped")) {
+            event.target.classList.add("droppable-hover");
+          }
+        }
+
+        function dragOver(event) {
+          if(!event.target.classList.contains("dropped")) {
+            event.preventDefault(); 
+          }
+        }
+
+        function dragLeave(event) {
+          if(!event.target.classList.contains("dropped")) {
+            event.target.classList.remove("droppable-hover");
+          }
+        }
+
+        function drop(event) {
+          event.preventDefault();
+          event.target.classList.remove("droppable-hover");
+          const draggableElementData = event.dataTransfer.getData("text"); 
+          const droppableElementData = event.target.getAttribute("data-draggable-id");
+          const isCorrectMatching = draggableElementData === droppableElementData;
+          if(isCorrectMatching) {
+            const draggableElement = document.getElementById(draggableElementData);
+            event.target.classList.add("dropped");
+            event.target.style.backgroundColor = window.getComputedStyle(draggableElement).color;
+            draggableElement.classList.add("dragged");
+            draggableElement.setAttribute("draggable", "false");
+            event.target.insertAdjacentHTML("afterbegin", `<i class="${draggableElementData}"></i>`);
+          }
+        }
+
+            function toggle() {
+            var helpvid = document.querySelector(".helpvid")
+            var video = document.querySelector("video")
+            helpvid.classList.toggle("active");
+            video.pause();
+            video.currentTime = 0;
+          }
+
+          let inputs = document.getElementById("inp");
+          let text = document.querySelector(".text");
+
+          function Add(){
+              if(inputs.value == "") {
+                  alert("Please Enter Step")
+              } else {
+                  let newElement = document.createElement("ul");
+                  newElement.innerHTML=`${inputs.value} <i class="fa-solid fa-trash"></i>`;
+                  text.appendChild(newElement);
+                  inputs.value="";
+                  newElement.querySelector("i").addEventListener("click" , remove);
+                  function remove(){
+                      newElement.remove()
+                  }
+              }
+          }
+
+          </script>
+
+      <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab|Roboto:300,400,500,700" />
+
+    <title>Computational Mind</title>
+  </head>
+  <body>
+      <nav>
+            <div class="container nav_container">
+            <a href="index.html"><h4>Computational Mind</h4></a>
+             <ul class ="nav_menu">
+                <li style="--clr:#00ade1">
+                    <a href="index.html" data-text="&nbsp;Home">&nbsp;Home&nbsp;</a>
+                </li>
+                <li style="--clr:#f23208">
+                  <a href="learn.html" data-text="&nbsp;Learn">&nbsp;Learn&nbsp;</a>
+                </li>
+                <li style="--clr:#00dc82">
+                  <a href="feedback.html" data-text="&nbsp;Contact">&nbsp;Contact&nbsp;</a>
+                </li>
+                <li style ="--clr:#f36407">
+                  <a href ="login.html" data-text="&nbsp;Login">&nbsp;Login&nbsp;</a>
+                </li>
+            </ul>
+          </div>
+        </nav>
+      <header>
+        <div class="container header_container">
+        <div class="leftside_header">
+          <h2>Strengthen your mind and get your work done more efficiently!</h2>
+            <p>We want you to be as mentally strong as you can be. Here we will teach you about computational thinking, how it can benefit you,
+              and its use in our daily lives.
+            </p>
+            <button onclick="window.location.href='learn.html';">Start Learning!</button>
+            </div>
+            <div class="rightside_header">
+              <div class="header_image">
+                <img src="./images/compbrain.webp">
+              </div>
+            </div>
+          </div>
+      </header>
+
+      <section class="skills">
+        &nbsp;
+        <div class="container skills_container">
+          <div class="leftside_skills">
+            <h1>We plan to help you improve at different mental skills.</h1>
+            <p>We want to encourage you to think clearly about any problem you may have and approach it in a 
+            systematic way. We want you to be able to develop a solution in such a way that it can be simple enough
+          for another person or a computer to be able to execute it. These skills can assist you in tackling any problem
+        that you may encounter. As long as you practice and take the steps that you believe are correct, your decision-making will be exceptional.</p>
+          </div>
+          
+          <div class="rightside_skills">
+            <article class="skill">
+              <h5>Critical Thinking</h5>
+              <p>Computational thinking promotes critical thinking. You need to 
+                assess the information given to you, break it down and be able to
+                understand the complexities behind it. The deeper you get into it,
+                the more you'll understand and the easier you'll be able to mimic
+                the process in future problems.
+              </p>
+              </article>
+
+            <article class="skill">
+              <h5>Problem Solving</h5>
+              <p>The idea of computational thinking revolves around problem solving.
+                You need to solve a problem, but you do so in a way that makes the problem
+                easier, which then makes your path to the solution more simple as well.
+                Your solution will be easy enough for anybody else to understand, even a 
+                computer.
+              </p>
+              </article>
+
+            <article class="skill">
+                <h5>Pattern Recognition</h5>
+                <p>Through the process of compuational thinking, once you've broken everything down
+                  you are able to slowly identify any patterns that may be present in the problem. After
+                  you continue to recognize patterns you can easily transfer this skill to other things
+                  that you may experience in your life. 
+                </p>
+                </article>
+
+          </div>
+        </div>
+      </section>
+
+        &nbsp;
+
+        <section class="interact">
+          &nbsp;
+          <div class="container interact_container">
+            <h1>You need to be able to completely understand and retain the information given to you.</h1>
+            <p>Our plan to help you fully understand the material and to be able to remember it clearly.
+              In order to make this happen we will provide information visualization and human-computer interactions
+              within the learnings. This way, you can be fully engaged in the lesson, by being able to interact with things
+              while you read and by being able to visualize the information in another way.
+            </p>
+            &nbsp;
+
+            <img src="./images/infovis.png">
+            </div>
+  
+
+        </section>
+
+
+      <section class="contact">
+        &nbsp;
+        <div class="container contact_container">
+          <h1>We want to ensure you're as mentally strong as you can be!</h1>
+          <p>If you see anything wrong, have any suggestions or see any need for 
+            improvement, feel free to contact us. We want you to learn and completely enjoy your 
+            time here as well.   
+          </p>
+
+          &nbsp;
+
+          <button onclick="window.location.href='feedback.html';">Contact Us!</button>
+        </div>
+      </section>
+    </body>
+          <style>
+            body {
+            line-height: 1.5;
+            color: #fff;
+            background: #330099;
+            }
+
+            .container {
+              width: 75%;
+              margin: 0 auto;
+
+            }
+            h2 {
+              font-size: 2rem;
+            }
+
+            h4 {
+              font-size: 1.5rem;
+              -webkit-text-stroke: 1px;
+              -webkit-text-stroke-color: black;
+            }
+
+            * {
+            padding: 0;
+            margin: 0;
+            border: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-family: 'Mochiy Pop One', sans-serif;
+            }
+
+          a {
+            color: #fff;
+          }
+
+          header {
+            position: relative;
+            top: 5rem;
+            overflow: hidden;
+            height: 70vh;
+            margin-bottom: 2rem;
+          }
+          
+          .header_container {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            height: 100%;
+          }
+
+          .header_container p {
+            margin: 1rem 0 2.5rem;
+          }
+
+
+          nav {
+            background: transparent;
+            width: 100vw;
+            height: 5rem;
+            position: fixed;
+            top: 0;
+            z-index: 10;
+          }
+
+          .window-scroll {
+            background: #000;
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+          }
+
+          .nav_container {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+          .nav_menu {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+          }
+
+          .nav_menu a {
+            font-size: 1rem;
+          }
+
+          .nav_menu a:hover {
+            color: #9683EC;
+          }
+
+          ul{
+            position: relative;
+            list-style: none;
+            width: 60%;
+            justify-content: space-evenly;
+            gap: 30px;
+          }
+
+          ul li{ 
+            position: relative;
+            list-style: none;
+          }
+
+          ul li a{
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: transparent;
+            line-height: 1.5em;
+            text-decoration: none;
+            -webkit-text-stroke: 1px rgba(255,255,255,0.5);
+          }
+
+          ul li a::before {
+            position: absolute;
+            content: attr(data-text);
+            color: var(--clr);
+            width: 0;
+            overflow: hidden;
+            transition: 1s;
+            border-right: 4px solid var(--clr);
+           -webkit-text-stroke: 1px var(--clr);
+          }
+
+          ul li a:hover::before {
+            width: 100%;
+            filter: drop-shadow(0 0 25px var(--clr));
+          }
+
+          .header_container button {
+            font-size: 30px;
+            padding: 6px 10px;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            outline: none;
+            cursor: pointer;
+          }
+
+          .header_container button:hover {
+            background-color: transparent;
+            border-color: #fff;
+            color: #fff;
+            font-weight: 500;
+          }
+
+          .skills {
+            background: #000;
+            height: 45vh;
+          }
+          .skills h1 {
+            line-height: 1;
+            margin-bottom: 3rem;
+          }
+           
+          .skills_container {
+            display: grid;
+            grid-template-columns: 40% 60%;
+          }
+          
+          .leftside_skills {
+            margin-right: 4rem;
+          }
+
+          .leftside_skills p {
+            margin: 1rem 0 5rem;
+          }
+
+          .rightside_skills {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+          }
+
+          .skill {
+            padding: 2rem;
+          }
+
+          .skill:hover {
+            box-shadow: 0 2rem 2rem rgba(51, 0, 153, 1);
+          }
+
+          .skill p {
+            font-size: 1rem;
+          }
+
+          .interact {
+            background: #330099;
+            text-align: center;
+            height: 44vh;
+          }
+
+          .interact h1 {
+            line-height: 1;
+            margin-bottom: 3rem;
+          }
+
+          .interact p {
+            margin-bottom: 1.5rem;
+          }
+
+          .contact {
+            background: #000;
+            text-align: center;
+            height: 25vh;
+          }
+
+          .contact h1 {
+            line-height: 1;
+            margin-bottom: 3rem;
+          }
+
+          .contact p {
+            margin-bottom: 1.5rem;
+          }
+
+          .contact button {
+            font-size: 30px;
+            padding: 6px 10px;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            outline: none;
+            cursor: pointer;
+          }
+
+          .contact button:hover {
+            background-color: transparent;
+            border-color: #fff;
+            color: #fff;
+            font-weight: 500;
+          }
+
+          </style>    
+          
+          <script>
+            window.addEventListener('scroll', () => {
+              document.querySelector('nav').classList.toggle
+              ('window-scroll', window.scrollY > 50)})
+          </script>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #330099;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: calc(100% - 32px);
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .links {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .links a {
+            color: white;
+            text-decoration: underline;
+            margin: 0 10px;
+        }
+        .error-message {
+            color: red;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 160px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #333 transparent transparent transparent;
+        }
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        h4 {
+           font-size: 1.5rem;
+           -webkit-text-stroke: 1px;
+           -webkit-text-stroke-color: black;
+         }
+
+        * {
+            padding: 0;
+            margin: 0;
+            border: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-family: 'Mochiy Pop One', sans-serif;
+            }
+        
+        a {
+            color: #fff;
+          }
+
+        nav {
+            background: #330099;
+            width: 100vw;
+            height: 5rem;
+            position: fixed;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+          }
+
+
+          .nav_container {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+          .nav_menu {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+          }
+
+          .nav_menu a {
+            font-size: 1rem;
+          }
+
+          .nav_menu a:hover {
+            color: #9683EC;
+          }
+
+          ul{
+            position: relative;
+            list-style: none;
+            width: 60%;
+            justify-content: space-evenly;
+            gap: 30px;
+          }
+
+          ul li{ 
+            position: relative;
+            list-style: none;
+          }
+
+          ul li a{
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: transparent;
+            line-height: 1.5em;
+            text-decoration: none;
+            -webkit-text-stroke: 1px rgba(255,255,255,0.5);
+          }
+
+          ul li a::before {
+            position: absolute;
+            content: attr(data-text);
+            color: var(--clr);
+            width: 0;
+            overflow: hidden;
+            transition: 1s;
+            border-right: 4px solid var(--clr);
+           -webkit-text-stroke: 1px var(--clr);
+          }
+
+          ul li a:hover::before {
+            width: 100%;
+            filter: drop-shadow(0 0 25px var(--clr));
+          }
+
+    </style>
+</head>
+<body>
+    <nav>
+            <div class="container nav_container">
+                &nbsp;
+            <a href="index.html"><h4>Computational Mind</h4></a>
+             <ul class ="nav_menu">
+                <li style="--clr:#00ade1">
+                    <a href="index.html" data-text="&nbsp;Home">&nbsp;Home&nbsp;</a>
+                </li>
+                <li style="--clr:#f23208">
+                  <a href="learn.html" data-text="&nbsp;Learn">&nbsp;Learn&nbsp;</a>
+                </li>
+                <li style="--clr:#00dc82">
+                  <a href="feedback.html" data-text="&nbsp;Contact">&nbsp;Contact&nbsp;</a>
+                </li>
+                <li style ="--clr:#f36407">
+                  <a href ="login.html" data-text="&nbsp;Login">&nbsp;Login&nbsp;</a>
+                </li>
+            </ul>
+          </div>
+        </nav>
+        
+<form id="registrationForm" action="">
+    <h2>Registration Form</h2>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <div id="emailError" class="error-message"></div>
+
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name" required>
+
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="last_name" name="last_name" required>
+
+    <div class="tooltip">
+        <label for="password">Password:</label>
+        <span class="tooltiptext">Password must be at least 8 characters long</span>
+        <input type="password" id="password" name="password" required>
+    </div>
+    <button type="button" id="togglePassword">Show</button>
+    <div id="passwordError" class="error-message"></div>
+
+    <div class="tooltip">
+        <label for="confirm_password">Confirm Password:</label>
+        <span class="tooltiptext">Password must be at least 8 characters long</span>
+        <input type="password" id="confirm_password" name="confirm_password" required>
+    </div>
+    <button type="button" id="toggleConfirmPassword">Show</button>
+    <div id="confirmPasswordError" class="error-message"></div>
+
+    <input type="submit" id="registerButton" value="Register">
+
+    <div class="links">
+        <a href="login.html">Back To Login</a>
+        <a href="index.html">Go To Home Screen</a>
+    </div>
+</form>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.getElementById('registrationForm');
+        const emailInput = document.getElementById('email');
+        const passwordInput = document.getElementById('password');
+        const confirmPasswordInput = document.getElementById('confirm_password');
+        const togglePasswordButton = document.getElementById('togglePassword');
+        const toggleConfirmPasswordButton = document.getElementById('toggleConfirmPassword');
+
+        togglePasswordButton.addEventListener('click', function () {
+            togglePasswordVisibility(passwordInput, togglePasswordButton);
+        });
+
+        toggleConfirmPasswordButton.addEventListener('click', function () {
+            togglePasswordVisibility(confirmPasswordInput, toggleConfirmPasswordButton);
+        });
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the form from resetting and default submission behavior
+        
+            let isValid = true;
+        
+            // Email validation
+            if (!isValidEmail(emailInput.value)) {
+                emailError.textContent = 'Invalid email format';
+                isValid = false;
+            } else {
+                emailError.textContent = '';
+            }
+        
+            // Password length validation
+            if (passwordInput.value.length < 8) {
+                passwordError.textContent = 'Password must be at least 8 characters long';
+                isValid = false;
+            } else {
+                passwordError.textContent = '';
+            }
+        
+            // Password match validation
+            if (passwordInput.value !== confirmPasswordInput.value) {
+                confirmPasswordError.textContent = 'Passwords do not match';
+                isValid = false;
+            } else {
+                confirmPasswordError.textContent = '';
+            }
+        
+            if (isValid) {
+                // If all validations pass, you can redirect to congratulations.html
+                window.location.href = 'congratulations.html';
+            }
+        });
+        
+
+        function isValidEmail(email) {
+            // Basic email format validation
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+
+        function togglePasswordVisibility(inputField, toggleButton) {
+            if (inputField.type === 'password') {
+                inputField.type = 'text';
+                toggleButton.textContent = 'Hide';
+            } else {
+                inputField.type = 'password';
+                toggleButton.textContent = 'Show';
+            }
+        }
+    });
+</script>
+
+</body>
+</html>
